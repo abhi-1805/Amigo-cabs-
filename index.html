@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amigo cabs</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" media="screen and (max-width:840px)" href="css/phone.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans:ital@1&family=Roboto+Mono:ital@1&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="navbar">
+        <div id="logo">
+            <img src="logo.jpg" alt="amigo cabs">
+        </div>
+        <ul>
+            <li class="item"><a href="#home">Home</a></li>
+            <li class="item"><a href="#services-container">Services</a></li>
+            <li class="item"><a href="#client-section">Reasons</a></li>
+            <li class="item"><a href="#contact">Contact us</a></li>
+        </ul>
+    </nav>
+    <section id="home">
+        <!-- <h1 class="h-primary">Welcome to Amigo cab services</h1> -->
+        <div class="container">
+            <nav class="raa">
+                <a href="#" onclick="showContent('ride')">Ride</a>
+                <a href="#" onclick="showContent('drive')">Drive</a>
+                
+            </nav>
+            
+            <div class="content ride-content">
+                <h2>Book a ride</h2>
+                <p>Book a ride with our reliable drivers and enjoy a comfortable journey to your destination.</p>
+                <input class="poo" type="text" placeholder=".Enter pickup Location ">
+                <input class="poo" type="text" placeholder=".Enter Destination ">
+                <div class="btns">
+                    <button class="btn">Ride now</button>
+                    <button class="btnn">Schedule for later</button>
+                </div>
+            </div>
+            <div class="content drive-content active-content">
+                <h2>Drive with Us</h2>
+                <p>Join our team of drivers and start earning money by providing transportation services.</p>
+                <button class="btnnn">Sign up to drive</button>
+            </div>
+        
+        </div>
+        
+            <script>
+                function showContent(category) {
+                    document.querySelector('.ride-content').style.display = category === 'ride' ? 'block' : 'none';
+                    document.querySelector('.drive-content').style.display = category === 'drive' ? 'block' : 'none';
+                   
+                }
+            </script>
+    </section>
+    <section id="services-container">
+        <h1 class="h-primary center">Our Services</h1>
+        <div id="services">
+            <div class="box">
+                <img src="img/bike.jpg" alt="">
+                <h2 class="h-secondary center">Bike rides</h2>
+                <p class="center">Get affortable bike rides at your doorstep.Skip the crowd and zip through traffic with Amigo moto</p>
+                <button class="cen">Ride now</button>
+            </div>
+            <div class="box">
+                <img src="img/car.jpg" alt="">
+                <h2 class="h-secondary center">car rides</h2>
+                <p class="center">Book rentals to save time with one car and driver for your multi-stop trips.Book intercity cabs here. </p>
+                <button class="cen">Ride now</button>
+            </div>
+            <div class="box">
+                <img src="img/auto.jpg" alt="">
+                <h2 class="h-secondary center">Auto rides</h2>
+                <p class="center">Get Affortable Amigo Auto rides with no haggling.Request  Amigo Auto and ride comfortably around your city</p>
+                <button class="cen">Ride now</button>
+            </div>
+        </div>
+    </section>
+    <section id="client-section">
+        <h1 class="h-primary center">Here are the reasons for choosing us</h1>
+        <div id="clients">
+            <div class="client-item">
+                <h2>For any budget</h2>
+                <img src="img/logo-1.png" alt="our clients">
+            </div>
+            <div class="client-item">
+                <h2>For any distance</h2>
+                <img src="img/logo-2.png" alt="our clients">
+            </div>
+            <div class="client-item">
+                <h2>For any duration</h2>
+                <img src="img/logo-3.png" alt="our clients">
+            </div>
+           
+        </div>
+    </section>
+    <section id="contact">
+        <h1 class="h-primary center">Contact Us</h1>
+        <div id="contact-box">
+            <form action="">
+                <div class="form-group">
+                    <label for="name">Name: </label>
+                    <input type="text" name="name" id="name" placeholder="Enter your name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email: </label>
+                    <input type="email" name="name" id="email" placeholder="Enter your email">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone number: </label>
+                    <input type="phone" name="name" id="phone" placeholder="Enter your  number">
+                </div>
+                <div class="form-group">
+                    <label for="message">Message: </label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                </div>
+                <div class="last">
+                    <button class="lasto" type="submit">Button</button>
+                </div>
+                
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="center">
+            Copyright &copy; www.amigocabs.com. All rights reserved!
+        </div>
+    </footer>
+    <a href="#home" class="top">
+        <img src="img/scroll.png" alt="Scroll For Top">
+    </a>
+    <script>
+        function showContent(category) {
+            document.querySelector('.ride-content').style.display = category === 'ride' ? 'block' : 'none';
+            document.querySelector('.drive-content').style.display = category === 'drive' ? 'block' : 'none';
+           
+        }
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/script.js"></script>
+    
+</body>
+</html>
